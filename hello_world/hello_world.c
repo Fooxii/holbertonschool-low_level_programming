@@ -6,6 +6,7 @@
 */
 int main(void)
 {
-printf("Hello, World!\n");
-return (0);
+    // your code goes here
+    printf("Hello, World!\n");
+    return (0);
 }
