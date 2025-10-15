@@ -3,6 +3,8 @@
  *main - Entry point
  *
  *printing "Hello, World!" to the standard output
+ *
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
