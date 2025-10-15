@@ -1,0 +1,1 @@
+This repository will be about the programming language called C
