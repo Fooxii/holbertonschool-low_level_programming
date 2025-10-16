@@ -1,2 +1,2 @@
 #!/bin/bash
-gcc hello_world.c -o c
+gcc hello_world.c -E c
