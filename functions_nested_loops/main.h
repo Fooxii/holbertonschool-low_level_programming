@@ -1,10 +1,6 @@
 #ifndef MYSTDIO_H
 #define MYSTDIO_H
 
-void my_putchar() 
-{
-    putchar('_putchar');
-    putchar('\n');
-}
+void my_putchar();
 
-#endif
+#endif /* MYSTDIO_H */
