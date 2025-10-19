@@ -18,4 +18,5 @@ while (b16 <= 'f')
 putchar(b16);
 b16++;
 }
+return (0);
 }
