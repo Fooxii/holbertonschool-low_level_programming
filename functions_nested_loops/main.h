@@ -1,6 +1,6 @@
 #ifndef MYSTDIO_H
 #define MYSTDIO_H
 
-void my_putchar();
+int my_putchar(char c);
 
 #endif /* MYSTDIO_H */
