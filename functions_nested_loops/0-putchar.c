@@ -10,7 +10,14 @@ int main(void)
 {
 my_putchar();
 {
-putchar('_putchar');
+putchar('_');
+putchar('p');
+putchar('u');
+putchar('t');
+putchar('c');
+putchar('h');
+putchar('a');
+putchar('r');
 putchar('\n');
 }
 return (0);
