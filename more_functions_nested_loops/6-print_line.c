@@ -11,7 +11,7 @@ void print_line(int n)
 {
 if (n <= 0)
 {
-return (0);
+putchar('\n');
 }
 else
 {
@@ -21,5 +21,4 @@ _putchar('_');
 n--;
 }
 }
-_putchar('\n');
 }
