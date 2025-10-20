@@ -9,13 +9,15 @@
 
 void print_diagonal(int n)
 {
-while (n > 0)
+while (n > 0) // how many times \ will be printed
+{
+int spaces = n - 1;
+while (spaces > 0)
 {
 _putchar(' ');
-n--;
-}
-if (n <= 0)
-{
+spaces--;}
+_putchar('\\');
 _putchar('\n');
+n--;
 }
 }
