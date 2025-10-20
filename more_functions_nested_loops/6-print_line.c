@@ -11,7 +11,7 @@ void print_line(int n)
 {
 if (n <= 0)
 {
-return (void);
+return (0);
 }
 else
 {
