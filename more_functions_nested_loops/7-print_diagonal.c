@@ -9,7 +9,7 @@
 
 void print_diagonal(int n)
 {
-while (n > 0) // how many times \ will be printed
+while (n > 0)
 {
 int spaces = n - 1;
 while (spaces > 0)
