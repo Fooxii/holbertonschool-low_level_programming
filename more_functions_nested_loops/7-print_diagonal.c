@@ -16,6 +16,6 @@ n--;
 }
 if (n == 0)
 {
-_putchat('\n');
+_putchar('\n');
 }
 }
