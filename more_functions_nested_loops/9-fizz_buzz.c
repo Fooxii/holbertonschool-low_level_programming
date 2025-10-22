@@ -16,19 +16,23 @@ for (i = 1; i <= 100; i++)
 {
 if (i % 3 == 0 && i % 5 == 0)
 {
-printf("FizzBuzz ");
+printf("FizzBuzz");
+putchar(' ');
 }
 else if (i % 3 == 0)
 {
-printf("Fizz ");
+printf("Fizz");
+putchar(' ');
 }
 else if (i % 5 == 0)
 {
-printf("Buzz ");
+printf("Buzz");
+putchar(' ');
 }
 else
 {
-printf("%d ", i);
+printf("%d", i);
+putchar(' ');
 }
 }
 return (0);
