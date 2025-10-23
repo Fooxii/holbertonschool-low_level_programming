@@ -14,5 +14,4 @@ int temp = 0;
 *a = temp;
 *b = *a;
 temp = *b;
-_putchar('\n');
 }
