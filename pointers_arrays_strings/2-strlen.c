@@ -12,5 +12,6 @@ int _strlen(char *s)
 {
 int length;
 length = strlen(s);
-return (length);
+_putchar(length + '0');
+_putchar ('\n');
 }
