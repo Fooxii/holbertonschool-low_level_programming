@@ -26,6 +26,7 @@ _putchar(*s);
 s--;
 if (length == 0)
 {
+_putchar('\n');
 return;
 }
 }
