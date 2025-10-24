@@ -24,6 +24,10 @@ for (length = len; length >= 0; length--)
 {
 _putchar(*s);
 s--;
+if (length == 0)
+{
+return;
 }
+
 
 }
