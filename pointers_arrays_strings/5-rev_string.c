@@ -2,7 +2,6 @@
 
 /*
  * rev_string - function that reverses a string
- *
  * return void
  */
 
