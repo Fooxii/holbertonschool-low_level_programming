@@ -14,7 +14,7 @@ _putchar(*str);
 str++;
 if (*str == '\0')
 {
-
+_putchar('\n');
 return;
 }
 
