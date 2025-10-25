@@ -16,7 +16,7 @@ while (*s != '\0')
 s++;
 }
 
-end = s - 1;
+end = *s - 1;
 
 while (start < end)
 {
