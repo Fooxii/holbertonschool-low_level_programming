@@ -15,7 +15,7 @@ while (*s != '\0')
 s++;
 }
 
-for (length = s - 1; length > 0; length--)
+for (length = *s - 1; length > 0; length--)
 {
 _putchar(*s);
 s--;
