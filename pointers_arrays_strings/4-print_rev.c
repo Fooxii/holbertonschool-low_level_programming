@@ -19,6 +19,7 @@ len++;
 s++;
 }
 
+s--;
 
 for (length = len; length >= 0; length--)
 {
@@ -26,7 +27,7 @@ _putchar(*s);
 s--;
 if (length == 0)
 {
-
+_putchar('\n');
 return;
 }
 }
