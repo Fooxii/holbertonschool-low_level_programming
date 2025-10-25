@@ -15,8 +15,6 @@ half++;
 length++;
 }
 
-length--;
-
 if (length % 2 == 0)
 {
 half = str + length / 2;
