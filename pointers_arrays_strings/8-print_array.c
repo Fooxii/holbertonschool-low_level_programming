@@ -4,6 +4,7 @@
 /**
  * print_array - function that prints n elements of an array of intergers
  * @n: number of elements to be printed
+ * @a: array of intergers being stored
  */
 
 void print_array(int *a, int n)
