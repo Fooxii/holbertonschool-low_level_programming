@@ -7,26 +7,26 @@
 
 void rev_string(char *s)
 {
-int start = 0;
-int end = 0;
+char *start = s;
+char *end = s;
 int temp;
 
-while (*s != '\0')
+while (*end != '\0')
 {
-s++;
+end++;
 }
 
-end = *s - 1;
+end --;
 
 while (start < end)
 {
 
-temp = start;
-start = end;
-end = temp;
+temp = *start;
+*start = *end;
+*end = temp;
 
 start++;
-end++;
+end--;
 
 }
 
