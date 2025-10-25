@@ -3,8 +3,8 @@
 
 /**
  * print_array - function that prints n elements of an array of intergers
- * @n: number of elements to be printed
- * @a: array of intergers being stored
+ * @a: pointer to the first element of the array
+ * @n: number of elements of the array to be printed
  */
 
 void print_array(int *a, int n)
