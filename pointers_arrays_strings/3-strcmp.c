@@ -25,19 +25,17 @@ s2count++;
 
 if (s1count == s2count)
 {
-int same = 0;
-return (same);
+return (0);
 }
 
 else if (s1count < s2count)
 {
-int less = -1;
-return (less);
+return (-1);
 }
 
 else if (s1count > s2count)
 {
-int greater = 1;
-return (greater);
+return (1);
 }
+return (0);
 }
