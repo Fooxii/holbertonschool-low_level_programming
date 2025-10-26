@@ -18,12 +18,12 @@ while (*p != '\0')
 p++;
 }
 
-if (n <= 0)
+if (*n <= 0)
 {
 return (dest);
 }
 
-while (*src < n)
+while (*src < *n)
 {
 *p = *src;
 p++;
