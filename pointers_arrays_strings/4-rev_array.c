@@ -12,7 +12,7 @@ int *start = a;
 int *end = a + n - 1;
 int temp;
 
-while (*start < end)
+while (*start < *end)
 {
 temp = *start;
 *start = *end;
