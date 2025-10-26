@@ -13,6 +13,8 @@ char *_strncat(char *dest, char *src, int n)
 
 char *p = dest;
 
+
+
 while (*p != '\0')
 {
 p++;
@@ -23,13 +25,16 @@ if (n <= 0)
 return (dest);
 }
 
-while (*src < n)
+else
+{
+while (*src != n)
 {
 *p = *src;
 p++;
 src++;
 }
 
+}
 
 *p = '\0';
 
