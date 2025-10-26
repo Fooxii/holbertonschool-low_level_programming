@@ -1,10 +1,11 @@
 #include "main.h"
 
 /**
- * _strcat - merges two strings
+ * _strncat - merges src to the end of dest string for n char
  * @dest: pointer to destination string
  * @src: pointer to source string
- * Return: dest string merged with src string
+ * @n: number of characters from src being merged to dest
+ * Return: dest string merged with src string for n char
  */
 
 char *_strncat(char *dest, char *src, int n)
