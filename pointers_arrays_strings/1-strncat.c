@@ -27,11 +27,12 @@ return (dest);
 
 else
 {
-while (*src != n)
+while (*src != '\0' && n > 0)
 {
 *p = *src;
 p++;
 src++;
+n--;
 }
 
 }
