@@ -1,9 +1,9 @@
 #include "main.h"
 
 /**
- * _atoi - converts string to an interger
+ * _atoi - converts a string to an integer
  * @s: string to be converted
- * Return: the integer found in the string or 0 if no numbers are present
+ * Return: the integer found in the string, or 0 if no numbers are present
  */
 int _atoi(char *s)
 {
@@ -20,18 +20,16 @@ else if (*s == '+')
 else if (*s >= '0' && *s <= '9')
 {
 if (sign == 1)
-num = num*10 + (*s - '0');
- else
-num = num*10 - (*s - '0');  /* subtract for negative numbers */
+num = num * 10 + (*s - '0');
+else
+num = num * 10 - (*s - '0');
 found = 1;
 }
 else if (found)
-{
 break;
-
 
 s++;
 }
-}
-return (num *sign);
+
+return (num);
 }
