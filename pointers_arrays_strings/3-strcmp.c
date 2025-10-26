@@ -16,6 +16,7 @@ while (*s1 != '\0')
 s1++;
 s1count++;
 }
+
 while (*s2 != '\0')
 {
 s2++;
@@ -24,16 +25,19 @@ s2count++;
 
 if (s1count == s2count)
 {
-return (0);
+int same = 0;
+return (same);
 }
 
 else if (s1count < s2count)
 {
-return (-1);
+int less = -1;
+return (less);
 }
 
 else if (s1count > s2count)
 {
-return (1);
+int greater = 1;
+return (greater);
 }
 }
