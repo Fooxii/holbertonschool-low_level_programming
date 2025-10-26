@@ -26,9 +26,6 @@ copy++;
 n--;
 }
 
-if (n <= 0)
-{
-return (dest);
-}
+return(dest);
 
 }
