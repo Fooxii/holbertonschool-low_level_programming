@@ -19,7 +19,7 @@ copy++;
 n--;
 }
 
-if (n > 0)
+while (n > 0)
 {
 *copy = '\0';
 copy++;
