@@ -12,7 +12,6 @@ char *_strncat(char *dest, char *src, int n)
 {
 
 char *p = dest;
-int n;
 
 while (*p != '\0')
 {
