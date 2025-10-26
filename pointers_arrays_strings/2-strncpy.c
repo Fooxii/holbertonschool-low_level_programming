@@ -26,6 +26,6 @@ copy++;
 n--;
 }
 
-return(dest);
+return (dest);
 
 }
