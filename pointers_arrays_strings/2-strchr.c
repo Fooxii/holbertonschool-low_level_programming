@@ -17,5 +17,9 @@ return (s);
 }
 s++;
 }
+if (*s == '\0')
+{
+return (s);
+}
 return ((void *)0);
 }
