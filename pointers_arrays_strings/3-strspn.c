@@ -10,7 +10,7 @@
 unsigned int _strspn(char *s, char *accept)
 {
 unsigned int count;
-while (*s == *accept)
+while (*s == *accept && *s != '\0')
 {
 count++;
 s++;
