@@ -16,12 +16,12 @@ while (*s != '\0')
 if (*s == *accept)
 {
 count++;
+s++;
 }
 else
 {
 return (count);
 }
-s++;
 }
 return (count);
 }
