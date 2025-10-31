@@ -7,7 +7,7 @@
 
 void _puts_recursion(char *s)
 {
-if (*a == '\0')
+if (*s == '\0')
 {
 char *a = (*s + (*s + 1));
 
