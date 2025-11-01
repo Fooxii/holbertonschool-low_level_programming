@@ -18,6 +18,6 @@ return (1);
 }
 else
 {
-return (factorial(n * (n - 1)));
+return (n * factorial(n - 1));
 }
 }
