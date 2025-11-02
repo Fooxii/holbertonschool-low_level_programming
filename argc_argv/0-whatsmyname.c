@@ -2,6 +2,7 @@
 
 /**
  * main - function that prints its name
+ * @argc: void
  * @argv: array of command line arguments
  * Return: 0
  */
