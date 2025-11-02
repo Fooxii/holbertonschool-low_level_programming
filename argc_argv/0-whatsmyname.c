@@ -15,5 +15,6 @@ while (*name != '\0')
 _putchar(*name);
 name++;
 }
+_putchar('\n');
 return (0);
 }
