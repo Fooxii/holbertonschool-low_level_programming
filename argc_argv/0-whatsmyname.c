@@ -2,17 +2,17 @@
 
 /**
  * main - function that prints its name
- * @argc: command line argument count
  * @argv: array of command line arguments
  * Return: name of program
  */
 
-int main(int argc, char *argv[])
+int main(char *argv[])
 {
-int n;
-for (n = 0; n < argc; n++)
+char *name = argv[0];
+
+while (*name != '\0')
 {
-_putchar(argv[n]);
+_putchar(*name);
+name++;
 }
-_putchar('\n');
 }
