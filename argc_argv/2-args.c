@@ -1,27 +1,27 @@
 #include "main.h"
 
 /**
- * main - function that prints all arguments received
- * @argc: argument count
- * @argv: array of arguments
+ * main - prints all arguments received, one per line
+ * @argc: argument count (not used)
+ * @argv: array of argument strings
  * Return: 0
  */
-
 int main(int argc, char *argv[])
 {
-int count = argc;
-int i = 0;
+char **arg = argv;
 
-while (count != 0)
+(void)argc;
+
+while (*arg)
 {
-while (argv[i] != '\0')
-{
-_putchar(argv);
-argv++;
-}
-i++;
-count--;
+char *c = *arg;
+
+while (*c)
+_putchar(*c++);
+
 _putchar('\n');
+arg++;
 }
+
 return (0);
 }
