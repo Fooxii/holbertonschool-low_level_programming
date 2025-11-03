@@ -66,8 +66,8 @@ _putchar('\n');
 return 1;
 }
 
-int a = str_to_int(argv[1]);
-int b = str_to_int(argv[2]);
+a = str_to_int(argv[1]);
+b = str_to_int(argv[2]);
 result = a * b;
 
 
