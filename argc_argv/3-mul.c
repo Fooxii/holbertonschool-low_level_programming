@@ -22,7 +22,7 @@ result = result * 10 + (*s - '0');
 s++;
 }
 
-return result * sign;
+return (result *sign);
 }
 
 /**
@@ -52,7 +52,7 @@ _putchar((n % 10) + '0');
  * Return: 0 on success, 1 if incorrect number of arguments
  */
 
- int main(int argc, char *argv[])
+int main(int argc, char *argv[])
 {
 int a, b, result;
 if (argc != 3)
@@ -63,16 +63,16 @@ _putchar('r');
 _putchar('o');
 _putchar('r');
 _putchar('\n');
-return 1;
+return (1);
 }
 
 a = str_to_int(argv[1]);
 b = str_to_int(argv[2]);
-result = a * b;
+result = a *b;
 
 
 print_number(result);
 _putchar('\n');
 
-return 0;
+return (0);
 }
