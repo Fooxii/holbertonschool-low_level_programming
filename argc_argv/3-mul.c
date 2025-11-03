@@ -54,6 +54,7 @@ _putchar((n % 10) + '0');
 
  int main(int argc, char *argv[])
 {
+int a, b, result;
 if (argc != 3)
 {
 _putchar('E');
@@ -67,7 +68,8 @@ return 1;
 
 int a = str_to_int(argv[1]);
 int b = str_to_int(argv[2]);
-int result = a * b;
+result = a * b;
+
 
 print_number(result);
 _putchar('\n');
