@@ -19,7 +19,7 @@ if (width <= 0 || height <= 0)
 return ((void *)0);
 }
 
-arr2d = malloc(height * sizeof(int));
+arr2d = malloc(height * sizeof(int *));
 if (arr2d == (void *)0)
 {
 return ((void *)0);
@@ -30,6 +30,12 @@ for (h = 0; h < height; h++)
 arr2d[h] = malloc(width * sizeof(int));
 if (arr2d[h] == (void *)0)
 {
+while (h > 0)
+{
+free(arr2d[h]);
+h--;
+}
+free(arr2d);
 return ((void *)0);
 }
 
