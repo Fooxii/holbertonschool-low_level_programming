@@ -30,7 +30,7 @@ for (h = 0; h < height; h++)
 arr2d[h] = malloc(width * sizeof(int));
 if (arr2d[h] == (void *)0)
 {
-while (h > 0)
+while (h >= 0)
 {
 free(arr2d[h]);
 h--;
