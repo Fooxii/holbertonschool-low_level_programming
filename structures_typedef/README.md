@@ -1,0 +1,1 @@
+README file for the directory structures_typedef
