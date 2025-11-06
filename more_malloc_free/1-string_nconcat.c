@@ -11,7 +11,7 @@
 
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-int l1, l2;
+unsigned int l1, l2;
 char *s3, *merge;
 
 if (s1 == (void *)0)
@@ -22,7 +22,8 @@ if (s2 == (void *)0)
 {
 s2 = "";
 }
-char *p1 = s1, *p2 = s2;
+char *p1 = s1;
+char *p2 = s2;
 
 for (l1 = 0; *p1 != '\0'; l1++)
 {
