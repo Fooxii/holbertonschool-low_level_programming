@@ -11,8 +11,8 @@ void free_grid(int **arr2d, int height)
 {
 int i;
 
-for (i = 0; i <= height; i++)
-{
+for (i = 0; i < height; i++)
 free(arr2d[i]);
-}
+
+free(arr2d);
 }
