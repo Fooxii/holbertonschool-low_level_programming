@@ -18,7 +18,7 @@ if (min > max)
 return ((void *)0);
 }
 
-arr = malloc((diff) *sizeof(int));
+arr = malloc((diff) * sizeof(int));
 if (arr == (void *)0)
 {
 return ((void *)0);
