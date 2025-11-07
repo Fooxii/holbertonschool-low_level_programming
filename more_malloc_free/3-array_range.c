@@ -20,9 +20,9 @@ return ((void *)0);
 
 if (diff == 0)
 {
-diff = diff + 1;
+diff++;
 }
-arr = malloc(diff * sizeof(int));
+arr = malloc(diff *sizeof(int));
 if (arr == (void *)0)
 {
 return ((void *)0);
