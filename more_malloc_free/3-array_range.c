@@ -18,6 +18,10 @@ if (min > max)
 return ((void *)0);
 }
 
+if (diff == 0)
+{
+diff = diff + 1;
+}
 arr = malloc(diff * sizeof(int));
 if (arr == (void *)0)
 {
