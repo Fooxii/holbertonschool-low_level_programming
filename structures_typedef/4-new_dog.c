@@ -38,6 +38,8 @@ if (newdog->name == (void *)0)
 {
 return ((void *)0);
 }
+newdog->age = age;
+
 newdog->owner = malloc(lowner + 1);
 if (newdog->owner == (void *)0)
 {
