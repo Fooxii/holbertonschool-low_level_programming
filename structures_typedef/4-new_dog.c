@@ -12,7 +12,6 @@
 dog_t *new_dog(char *name, float age, char *owner)
 {
 dog_t *newdog;
-char *cname, *cowner;
 int lname, lowner;
 
 if (name == (void *)0 || owner == (void *)0)
@@ -20,11 +19,11 @@ if (name == (void *)0 || owner == (void *)0)
 return ((void *)0);
 }
 
-for (lname = 0; name != '\0'; lname++)
+for (lname = 0; *name != '\0'; lname++)
 {
 name++;
 }
-for (lowner = 0; name != '\0'; lowner++)
+for (lowner = 0; *name != '\0'; lowner++)
 {
 owner++;
 }
