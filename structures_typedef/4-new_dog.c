@@ -33,19 +33,20 @@ return ((void *)0);
 newdog->name = malloc(lname + 1);
 if (newdog->name == (void *)0)
 {
+free(newdog);
 return ((void *)0);
 }
 newdog->owner = malloc(lowner + 1);
 if (newdog->owner == (void *)0)
 {
+free(newdog->name);
+free(newdog);
 return ((void *)0);
 }
 
 for (i = 0; i <= lname; i++)
 newdog->name[i] = name[i];
-
 newdog->age = age;
-
 for (i = 0; i <= lowner; i++)
 newdog->owner[i] = owner[i];
 
