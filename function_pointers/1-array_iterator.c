@@ -8,7 +8,7 @@
  * @array: array
  * @size: size of the array
  * @action: is a pointer to the function being executed on each element
- * Return: 
+ * Return: returns if array or action are NULL
  */
 
 void array_iterator(int *array, size_t size, void (*action)(int))
