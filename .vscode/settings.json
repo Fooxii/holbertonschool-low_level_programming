@@ -1,6 +1,7 @@
 {
     "files.associations": {
         "main.h": "c",
-        "cstdlib": "c"
+        "cstdlib": "c",
+        "variadic_functions.h": "c"
     }
 }
