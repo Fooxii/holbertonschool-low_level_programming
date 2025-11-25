@@ -38,6 +38,7 @@ newNode->next = (void *)0;
 
 if (*head == (void *)0)
 {
+*head = newNode;
 return (newNode);
 }
 
