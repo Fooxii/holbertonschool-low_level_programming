@@ -13,7 +13,7 @@ list_t *add_node(list_t **head, const char *str)
 {
 char *dupstr;
 list_t *newNode;
-unsigned int length;
+unsigned int length = 0;
 
 dupstr = strdup(str);
 if (dupstr == (void *)0)
