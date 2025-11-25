@@ -8,7 +8,7 @@
 
 size_t list_len(const list_t *h)
 {
-int countNode = 0;
+size_t countNode = 0;
 while (h != (void *)0)
 {
 countNode++;
