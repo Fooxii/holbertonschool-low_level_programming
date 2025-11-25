@@ -14,9 +14,7 @@ while (head != (void *)0)
 {
 temp = head->next;
 free(head->str);
-free(head->len);
-free(head->next);
+free(head);
 head = temp;
 }
-free(head);
 }
