@@ -40,15 +40,13 @@ if (*head == (void *)0)
 {
 return (newNode);
 }
-else
-{
+
 temp = *head;
 while (temp->next != (void *)0)
 {
 temp = temp->next;
 }
 temp->next = newNode;
-}
 
 return (newNode);
 }
