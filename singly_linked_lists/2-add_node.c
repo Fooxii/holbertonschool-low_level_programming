@@ -20,7 +20,10 @@ if (dupstr == (void *)0)
 {
 return ((void *)0);
 }
-length = strlen(dupstr);
+while (dupstr[length] != '\0')
+{
+length++;
+}
 
 newNode = malloc(sizeof(list_t));
 if (newNode == (void *)0)
