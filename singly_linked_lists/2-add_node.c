@@ -18,11 +18,16 @@ if (dupstr == (void *)0)
 return ((void *)0);
 }
 
-list_t newNode;
-newNode.str = dupstr;
-newNode.len = length;
-newNode.next = *head;
+list_t *newNode;
+newNode = malloc(sizeof(list_t));
+if (newNode == (void *)0)
+{
+return ((void *)0);
+}
+newNode->str = dupstr;
+newNode->len = length;
+newNode->next = *head;
 *head = &newNode;
 
-return (&newNode);
+return (newNode);
 }
