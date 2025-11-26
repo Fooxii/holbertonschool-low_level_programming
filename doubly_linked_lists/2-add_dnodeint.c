@@ -16,7 +16,7 @@ return ((void *)0);
 
 new_node->n = n;
 new_node->prev = (void *)0;
-new_node->next = head;
+new_node->next = *head;
 if (*head != (void *)0)
 (*head)->prev = new_node;
 *head = new_node;
