@@ -1,0 +1,19 @@
+#include "lists.h"
+
+/**
+ * print_dlistint_len - function that returns the number of elements in a linked list
+ * @h: pointer to the head of the list
+ * Return: number of elements in the list
+ */
+
+size_t dlistint_len(const dlistint_t *h)
+{
+size_t nodeCount = 0;
+
+while (h != (void *)0)
+{
+nodeCount++;
+h = h->next;
+}
+return (nodeCount);
+}
