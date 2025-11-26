@@ -1,0 +1,1 @@
+README file of the directory doubly_linked_lists
