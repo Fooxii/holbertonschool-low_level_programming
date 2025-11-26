@@ -25,7 +25,6 @@ if (*head != NULL)
 {
 (*head)->prev = NULL;
 }
-
 free(current);
 return (1);
 }
@@ -44,12 +43,10 @@ if (current->prev != NULL)
 {
 current->prev->next = current->next;
 }
-
 if (current->next != NULL)
 {
 current->next->prev = current->prev;
 }
-
 free(current);
 return (1);
 }
