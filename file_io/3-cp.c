@@ -11,7 +11,7 @@
  * Return: 0 on sucess, 97, 98, 99 on failure
  */
 
-int cp(int argc, char *argv[])
+int main(int argc, char *argv[])
 {
 int fd_from, fd_to;
 ssize_t read_bytes, written_bytes;
