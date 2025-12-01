@@ -39,7 +39,7 @@ return (-1);
 ptr++;
 }
 }
-if (close (fd) == -1)
+if (close(fd) == -1)
 {
 return (-1);
 }
