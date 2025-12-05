@@ -28,21 +28,18 @@ if (strcmp(temp->key, key) == 0)
 cpvalue = strdup(value);
 if (!cpvalue)
 return (0);
-
 free(temp->value);
 temp->value = cpvalue;
 return (1);
 }
 temp = temp->next;
 }
-
 node = malloc(sizeof(hash_node_t));
 if (!node)
 return (0);
 
 node->key = strdup(key);
 node->value = strdup(value);
-
 if (!node->key || !node->value)
 {
 free(node->key);
@@ -53,6 +50,5 @@ return (0);
 
 node->next = ht->array[index];
 ht->array[index] = node;
-
 return (1);
 }
