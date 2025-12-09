@@ -4,24 +4,38 @@
 /**
  * hash_table_print - function that prints a hash table
  * @ht: the hash table being printed
- * @Return: void
+ * Return: void
  */
 
 void hash_table_print(const hash_table_t *ht)
 {
 unsigned long int i;
-if (!ht)
+hash_node_t *node;
+int first = 1;
+
+if (ht == (void *)0)
 {
 return;
 }
+
 printf("{");
+
 for (i = 0; i < ht->size; i++)
 {
-printf("'%s': '%s'", ht->array[i]->key, ht->array[i]->value);
-if (i < ht->size - 1)
+node = ht->array[i];
+
+while (node != (void *)0)
+{
+if (first == 0)
 {
 printf(", ");
 }
+
+printf("'%s': '%s'", node->key, node->value);
+first = 0;
+node = node->next;
 }
+}
+
 printf("}\n");
 }
